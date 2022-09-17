@@ -210,14 +210,12 @@ a {
 .category .card {
   border: 3px solid #f76e11;
   color: #f76e11;
-  transition: 0.1s ease-in-out;
 }
 .category .card .card-body {
   padding: 45px 0px;
 }
 .category .card:hover {
   background-color: #f76e11;
-  transition: 0.1s ease-in-out;
 }
 .category .card:hover .name-course,
 .category .card:hover .class {

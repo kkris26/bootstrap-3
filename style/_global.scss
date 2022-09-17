@@ -137,7 +137,6 @@ a {
     }
     border: 3px solid $first-color;
     color: $first-color;
-    transition: 0.1s ease-in-out;
 
     &:hover {
       background-color: $first-color;
@@ -145,7 +144,6 @@ a {
       .class {
         color: white;
       }
-      transition: 0.1s ease-in-out;
     }
   }
   .name-course {
