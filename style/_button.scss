@@ -1,0 +1,35 @@
+@import "colors";
+@import "font";
+.btn-master {
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: map-get($font-weights, medium);
+
+  @include media-breakpoint-down(sm) {
+    padding: 8px 15px;
+    border-radius: 10px;
+  }
+}
+
+.btn-first {
+  @extend .btn-master;
+  background-color: $button-color;
+  color: white;
+
+  &:hover {
+    color: rgb(236, 236, 236);
+    background-color: #c43e3e;
+  }
+}
+
+.btn-second {
+  @extend .btn-master;
+  border: 2px solid $button-color;
+  color: $button-color;
+
+  &:hover {
+    color: rgb(236, 236, 236);
+    background-color: #c43e3e;
+    border: 2px solid #c43e3e;
+  }
+}

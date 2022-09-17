@@ -1,0 +1,311 @@
+@import "font";
+@import "colors";
+@import "button";
+
+// logo
+.navbar img {
+  width: 150px;
+  @include media-breakpoint-down(sm) {
+    width: 120px;
+  }
+}
+// logo
+* {
+  list-style: none;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-family: "Work Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.section-margin {
+  margin-top: 180px;
+}
+
+.label-section {
+  font-size: 25px;
+  font-weight: map-get($font-weights, medium);
+  color: $black;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
+.heading-section {
+  font-size: 40px;
+  font-weight: map-get($font-weights, medium);
+  color: $black;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 26px;
+  }
+}
+
+.home .container .title p {
+  --animate-delay: 0.5s;
+}
+
+.sub-heading {
+  font-size: 18px;
+  font-weight: map-get($font-weights, light);
+  color: $black;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+  }
+}
+
+// home css
+.home {
+  background-color: $second-color;
+  height: 100vh;
+  @include media-breakpoint-down(md) {
+    height: 100%;
+  }
+}
+.home .row {
+  height: 100vh;
+  @include media-breakpoint-down(md) {
+    height: 100%;
+    margin-top: 50px;
+  }
+}
+.home .heading-home {
+  font-size: 40px;
+  font-weight: map-get($font-weights, bold);
+  color: $black;
+  .profesional {
+    color: $first-color;
+  }
+  .kreatif {
+    color: $button-color;
+  }
+  // @include media-breakpoint-between(md, lg){
+  //   font-size: 36px;
+  // }
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+  }
+}
+.home .sub-heading-home {
+  font-size: 16px;
+  font-weight: map-get($font-weights, light);
+  color: $black;
+  // @include media-breakpoint-down (md){
+  //   font-size: 16px;
+  // }
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+  }
+}
+.btn-home {
+  margin-top: 100px;
+  @include media-breakpoint-between(md, lg) {
+    margin-top: 60px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 40px;
+  }
+}
+// home css
+
+// partnership
+.partnership img {
+  @include media-breakpoint-down(md) {
+    width: fit-content;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 50px;
+  }
+}
+// partnership
+
+// category css
+.category {
+  i {
+    font-size: 46px;
+    color: $first-color;
+    @include media-breakpoint-down(md) {
+      font-size: 25px;
+    }
+  }
+  .card {
+    .card-body {
+      padding: 45px 0px;
+    }
+    border: 3px solid $first-color;
+    color: $first-color;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      background-color: $first-color;
+      .name-course,
+      .class {
+        color: white;
+      }
+      transition: 0.1s ease-in-out;
+    }
+  }
+  .name-course {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .class {
+    font-size: 16px;
+  }
+}
+// category css
+
+// product
+.product {
+  i {
+    font-size: 46px;
+    color: $first-color;
+    @include media-breakpoint-down(md) {
+      font-size: 25px;
+    }
+  }
+  .member {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+  }
+  .star i {
+    font-size: 28px;
+    color: gold;
+  }
+  .card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
+  }
+  .img-box {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .bg-img {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.17%, #000000 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .info {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+    }
+  }
+  .product-name {
+    font-size: 18px;
+    color: $black;
+  }
+  .class-name {
+    font-size: 16px;
+    background-color: $second-color;
+    color: $black;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+  }
+  .price {
+    font-size: 26px;
+    font-weight: 700;
+    color: $first-color;
+  }
+}
+// product
+
+// about
+.about {
+  img {
+    width: 85%;
+  }
+}
+// about
+
+// testimonial
+.testimonial {
+  background-color: $second-color;
+  .star {
+    color: gold;
+    font-size: 20px;
+  }
+  .people img {
+    width: 56px;
+    border-radius: 50%;
+  }
+  .name {
+    font-weight: 500;
+  }
+  .work {
+    font-weight: 300;
+  }
+  .card {
+    background-color: $first-color;
+    border: 0;
+    box-shadow: 0px 0px 25px #ffbb8088;
+  }
+  .body-text {
+    padding-right: 60px;
+  }
+  .bxs-quote-right {
+    font-size: 50px;
+    color: #ffbc80;
+  }
+
+  .swiper-pagination-bullet {
+    color: #ffbc80;
+    background-color: $first-color;
+  }
+}
+// testimonial
+
+// footer
+.footer {
+  background-color: #db6f279d;
+  border-radius: 50px 50px 0px 0px;
+  @include media-breakpoint-down(md) {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .logo {
+    width: 120px;
+  }
+  ul {
+    padding: 0;
+  }
+  a,
+  p {
+    color: white;
+    font-weight: 300;
+
+    &:hover {
+      color: #dbdbdb;
+    }
+  }
+  .icon i {
+    font-size: 40px;
+    color: white;
+  }
+  .service {
+    font-weight: 700;
+    font-size: 22px;
+    color: #ece7b4;
+  }
+  .copy {
+    font-size: 14px;
+    @include media-breakpoint-down(md) {
+      font-size: 10px;
+    }
+  }
+}
+// footer
